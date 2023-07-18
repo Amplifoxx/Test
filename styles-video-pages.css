@@ -924,3 +924,11 @@ body::-webkit-scrollbar {
     direction:ltr
 }
 /*# sourceMappingURL=controls.css.map */
+
+.vimeo__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
