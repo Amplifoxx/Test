@@ -348,18 +348,6 @@ body::-webkit-scrollbar {
     }}
 
 
-.banner {
-    background-image:  url('images/Banners/Chicken_Little_Banner1.png');
-    background-size: cover;
-    background-position: center center;
-    background-position-y: 30%;
-    color: white;
-    object-fit: contain;
-    height: 60px;
-    filter: grayscale(100%);
-}
-
-
 
 .banner1 {
   background-image: url('images/Banners/Chicken_Little_Banner1.png');
@@ -397,7 +385,7 @@ body::-webkit-scrollbar {
 }
 
 .banner3 {
-    background-image:  url('images/Banners/CKOMbanner_FLIPPED.png');
+    background-image:  url('images/Banners/CKOM_compressed.png');
     background-size: cover;
     background-position: center center;
     background-position-y: 15%;
@@ -408,7 +396,7 @@ body::-webkit-scrollbar {
 
 
 .banner4 {
-    background-image:  url('images/Banners/highway9.png');
+    background-image:  url('images/Banners/highway9_compressed.png');
     background-size: cover;
     background-position: center center;
     background-position-y: 30%;
@@ -419,7 +407,7 @@ body::-webkit-scrollbar {
 
 /* Roadkill Preview */
 .banner5 {
-  background-image:  url('images/Banners/Roadkill_Preview.png');
+  background-image:  url('images/Banners/Roadkill_Preview_Compressed.png');
   background-size: cover;
   background-position: center center;
   background-position-y: 30%;
@@ -967,8 +955,8 @@ padding: 0px 50px;
     max-width: calc(100% / var(--items-per-screen));
     aspect-ratio: 16 / 9.3;
     max-height: 800px;
-    padding: var(--img-gap);
-    border-radius: 8px;
+    padding: 6.5px;
+    border-radius: 12px;
     
   }
 
