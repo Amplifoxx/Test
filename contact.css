@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter_Bold;
     background-image: radial-gradient(#000, #000);
 }
 
@@ -52,7 +52,7 @@ body {
 
   .contact__button {
     cursor: pointer;
-    font-family: helvetica;
+    font-family: Inter_Bold;
     font-weight: 700;
     font-size: 14px;
     color: #111;
@@ -63,3 +63,10 @@ body {
     background-color: #fbc81d;
   }
 
+  /* Inter */
+  @font-face { font-family: Inter_Bold; src: url('Inter-Bold.ttf'); } 
+  @font-face { font-family: Inter_SemiBold; src: url('Inter-SemiBold.ttf'); } 
+  @font-face { font-family: Inter_Black; src: url('Inter-Black.ttf'); } 
+  @font-face { font-family: Inter_Regular; src: url('Inter-Regular.ttf'); } 
+  @font-face { font-family: Inter_Medium; src: url('Inter-Medium.ttf'); } 
+  

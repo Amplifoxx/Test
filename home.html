@@ -40,11 +40,12 @@ function scrollToBottom() {
     <!-- end of scroll to bottom script -->
 
 
+    <!-- this section is the top nav. FILMS GRAPHICS ETC. Might not need it anymore -->
     <div class="nav" id="nav">
         <a href="index.html"><button class="nav__title">MIKE OVERTON</button></a>
             <!-- <img src="images/netflix-avatar.png" alt="" class="nav__avatar"> -->
-            <a href=home.html><button class="nav__page">Films</button></a>
-            <button class="nav__page" onClick="scrollToBottom()" style="margin-top:5px">Graphics</button>
+            <!--<a href=home.html><button class="nav__page">Films</button></a> -->
+            <!--<button class="nav__page" onClick="scrollToBottom()" style="margin-top:5px">Graphics</button>-->
             <!-- <a href=home.html><button class="nav__page">Animation</button></a> -->
             <div class="nav__spacer"></div>
                 <a href="contact.html"><button class="nav__button">Contact</button></a>
@@ -71,14 +72,15 @@ function scrollToBottom() {
         
     <!-- end of banner backup -->
     
+    
 
         <div class="slideshow-container">
 
             <div class="mySlides fade">
                 <div class="banner1">
-                    <div class="banner__contents1">
+                      <div class="banner__contents1">
                         <!-- <h1 class="banner__title">Chicken Little</h1> -->
-                        <div><img src="images/Movie Title Cards/Chicken Little Title.png" alt="" class="banner__logo" style="">
+                        <div><img src="images/Movie Title Cards/Chicken Little Title.png" alt="" class="banner__logo" style="border: 0px solid red;">
                             <div class="banner__buttons">
                                 <button class="genre__button"style="margin-left: 0%;"><span style="margin-right: 0px">Music Video</span></button>
                                  <button class="runtime__button"style="margin-left: 0%;"><span style="margin-right: 0px">Runtime: 3 minutes </span></button>
@@ -92,6 +94,8 @@ function scrollToBottom() {
                         </div>
                     </div>
                     <div class="banner--fadeBottom"></div>
+                    <!--<div class="banner--fadeSideLeft"></div>
+                    <div class="banner--fadeSideRight"></div>-->
                 </div>
             </div>
 
@@ -113,6 +117,8 @@ function scrollToBottom() {
                         </div>
                     </div>
                     <div class="banner--fadeBottom"></div>
+                    <!--<div class="banner--fadeSideLeft"></div>
+                    <div class="banner--fadeSideRight"></div>-->
                 </div>
             </div>
             
@@ -134,6 +140,8 @@ function scrollToBottom() {
                         </div>
                     </div>
                     <div class="banner--fadeBottom"></div>
+                    <!--<div class="banner--fadeSideLeft"></div>
+                    <div class="banner--fadeSideRight"></div>-->
                 </div>
             </div>
             
@@ -155,6 +163,8 @@ function scrollToBottom() {
                         </div>
                     </div>
                     <div class="banner--fadeBottom"></div>
+                    <!--<div class="banner--fadeSideLeft"></div>
+                    <div class="banner--fadeSideRight"></div>-->
                 </div>
             </div>
 
@@ -182,22 +192,23 @@ function scrollToBottom() {
                 /* Slideshow container */
                 .slideshow-container {
                     background-size: cover;
-                    background-position: center center;
+                    background-position: center center; 
                     background-position-y: 30%;
                     color: white;
                     object-fit: contain;
                     height: 360px;
                     z-index: 0;
-                    animation: xfade 0s -10s infinite;
+                    animation: xfade 10s 0s infinite;
                      animation-timing-function: ease-in-out;
                 }
 
                 @keyframes xfade{
 
                         0% {opacity: 0;}
-                        20% {opacity: 1;}
-                        33% {opacity: 1;}
-                        53% {opacity: 0;}
+                        2% {opacity: 0;}
+                        15% {opacity: 1;}
+                        85% {opacity: 1;}
+                        98% {opacity: 0;}
                         100% {opacity: 0;}
                         }
                 
@@ -331,8 +342,8 @@ function scrollToBottom() {
     <div class="scroll__row">
       <div class="scroll__header__top">
         
-        <div class="sections" style="color:#fff;margin-left:0px;margin-bottom: 0px;">Original Short Films</div>
-        <div class="progress-bar"></div>
+        <div class="sections" style="margin-left:0px;margin-bottom: 0px;z-index: 1;">Original Short Films</div>
+        <div class="progress-bar" style="z-index: 1;"></div>
       </div>
       <div class="scroll__container">
         <button class="handle left-handle">
@@ -342,13 +353,13 @@ function scrollToBottom() {
         </button>
         <div class="top__movie__slider">
           <div class="videoPreview__box"><a href="chicken-little.html"><video  class="videoPreview" src="images/Thumnail Previews/Chicken_Little_Poster_Loop_MUSIC.mp4" poster="images/Movie Posters/Poster+Image+Chicken+little.png"></video></a></div>
+          <div class="videoPreview__box"><a href="natural-selection.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Natural Selection 320x485 MUSIC.mp4" poster="images/Movie Posters/Natural+Selection+500x758+awards.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="Highway9.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Highway9_Music.mp4" poster="images/Movie Posters/highway 9 poster.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="quarantine-film.html"><video class="videoPreview" height="" src="images/Thumnail Previews/Quarantine Hover Video_MUSIC.mp4" poster="images/Movie Posters/Quarantine+500x758.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="certain-kind-of-man.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/CKOM_MUSIC.mp4" poster="images/Movie Posters/CKOM fixed.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="heavy-metal.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Heavy Metal Hover Video_MUSIC.mp4" poster="images/Movie Posters/Heavy+Metal+website+poster LAURALS.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="Sylus.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Sylus+Hover_MUSIC.mp4" poster="images/Movie Posters/SYLUS500x758.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="Savior.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Savior500x758_Music_Alt.mp4" poster="images/Movie Posters/Savior_Fixed.jpg"></video></a></div>
-            <div class="videoPreview__box"><a href="natural-selection.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Natural Selection 320x485 MUSIC.mp4" poster="images/Movie Posters/Natural+Selection+500x758+awards.jpg"></video></a></div>
         </div>
         <button class="handle right-handle">
           <div class="back__arrow">
@@ -362,7 +373,7 @@ function scrollToBottom() {
     <div class="scroll__row">
       <div class="scroll__header">
         
-        <div class="sections" style="color:#fff;margin-left:0px;margin-bottom: 0px;">Editing Work</div>
+        <div class="sections" style="margin-left:0px;margin-bottom: 0px;">Commercial Editing Work</div>
         <div class="progress-bar"></div>
       </div>
       <div class="scroll__container">
@@ -372,10 +383,16 @@ function scrollToBottom() {
           </div>
         </button>
         <div class="movie__slider">
+          
+          <div class="oldvideoPreview__box"><a href="unavailable.html"><video class="oldvideoPreview"  height="" src="images/Client Videos/Thumbnail_previews/Cue_Birth_Control.mp4" poster="images/Client Videos/Stills/Cue_Birth_Control.png"></video></a></div>
+          <div class="oldvideoPreview__box"><a href="unavailable.html"><video class="oldvideoPreview"  height="" src="images/Client Videos/Thumbnail_previews/Cue_Flu_Covid.mp4" poster="images/Client Videos/Stills/Cue_Flu_Covid.png"></video></a></div>
+          <div class="oldvideoPreview__box"><a href="unavailable.html"><video class="oldvideoPreview"  height="" src="images/Client Videos/Thumbnail_previews/Cue_GLP.mp4" poster="images/Client Videos/Stills/Cue_GLP.png"></video></a></div>
           <div class="oldvideoPreview__box"><a href="unavailable-UH.html"><video class="oldvideoPreview"  height="" src="images/Client Videos/Thumbnail_previews/UH1.mp4" poster="images/Client Videos/Stills/UH1Still.png"></video></a></div>
+          <div class="oldvideoPreview__box"><a href="unavailable-UH.html"><video class="oldvideoPreview" height="" src="images/Client Videos/Thumbnail_previews/UH3.mp4" poster="images/Client Videos/Stills/UH3v2.png"></video></a></div>
+          <div class="oldvideoPreview__box"><a href="unavailable.html"><video class="oldvideoPreview"  height="" src="images/Client Videos/Thumbnail_previews/Cue_Flu_Covid.mp4" poster="images/Client Videos/Stills/Cue_Flu_Covid.png"></video></a></div>
             <div class="oldvideoPreview__box"><a href="unavailable-UH.html"><video class="oldvideoPreview" height="" src="images/Client Videos/Thumbnail_previews/UH4.mp4" poster="images/Client Videos/Stills/UH4v2.png"></video></a></div>
             <div class="oldvideoPreview__box"><a href="unavailable-UH.html"><video class="oldvideoPreview" height="" src="images/Client Videos/Thumbnail_previews/UHTheTeam.mp4" poster="images/Client Videos/Stills/UHTeam2.png"></video></a></div>
-            <div class="oldvideoPreview__box"><a href="unavailable-UH.html"><video class="oldvideoPreview" height="" src="images/Client Videos/Thumbnail_previews/UH3.mp4" poster="images/Client Videos/Stills/UH3v2.png"></video></a></div>
+
         </div>
         <button class="handle right-handle">
           <div class="back__arrow">
@@ -386,10 +403,14 @@ function scrollToBottom() {
     </div>
 
 
+  <!-- Older Projects -->
+
+  <!--
+
     <div class="scroll__row">
       <div class="scroll__header">
         
-        <div class="sections" style="color:#fff;margin-left:0px;margin-bottom: 0px;">Older Projects</div>
+        <div class="sections" style="margin-left:0px;margin-bottom: 0px;">Older Projects</div>
         <div class="progress-bar"></div>
       </div>
       <div class="scroll__container">
@@ -412,15 +433,17 @@ function scrollToBottom() {
       </div>
     </div>
 
+    -->
 
 
 
+<!-- Motion Graphics -->
 
 
     <div class="scroll__row">
         <div class="scroll__header">
           
-          <div class="sections" style="color:#fff;margin-left:0px;margin-bottom: 0px;">Motion Graphics & Animation</div>
+          <div class="sections" style="color:#fff;margin-left:0px;margin-bottom: 0px;">Motion Graphics</div>
           <div class="progress-bar"></div>
         </div>
         <div class="scroll__container">
@@ -447,7 +470,10 @@ function scrollToBottom() {
           </button>
         </div>
       </div>
+
+  
     
+<!--
 
       <div class="scroll__row">
         <div class="scroll__header">
@@ -478,6 +504,8 @@ function scrollToBottom() {
           </button>
         </div>
       </div>
+
+      -->
 
 
       <div class="separator__bar" style=" height:60px;"></div>

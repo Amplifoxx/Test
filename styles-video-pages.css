@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
     padding: 0px 0px;
     background-color: rgba(1, 1, 1, 0.0);
     z-index: 2;
-    font-family: galano grotesque;
+    font-family: Inter_Black;
     font-style: bold;
 }
 
@@ -67,7 +67,7 @@ body::-webkit-scrollbar {
     font-size: 14px;
     background-color: rgba(1, 1, 1, 0.0);
     z-index: 2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter_Bold;
 }
 
 .description {
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
     padding: 0px 20px;
     background-color: rgba(1, 1, 1, 0.0);
     z-index: 2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter_Regular;
     max-width: 400px;
 }
 
@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
     padding: 0px 20px;
     background-color: rgba(1, 1, 1, 0.0);
     z-index: 2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter_Regular;
     max-width: 400px;
 }
 
@@ -113,6 +113,14 @@ body::-webkit-scrollbar {
  @font-face { font-family: DIN PRO EXTRABOLD; font-weight: normal; src: url('D-DIN-PRO-800-ExtraBold.otf');}
 
  @font-face { font-family: Perpetua; font-weight: normal; src: url('perpeta.ttf');}
+
+  /* Inter */
+@font-face { font-family: Inter_Bold; src: url('Inter-Bold.ttf'); } 
+@font-face { font-family: Inter_SemiBold; src: url('Inter-SemiBold.ttf'); } 
+@font-face { font-family: Inter_Black; src: url('Inter-Black.ttf'); } 
+@font-face { font-family: Inter_Regular; src: url('Inter-Regular.ttf'); } 
+@font-face { font-family: Inter_Medium; src: url('Inter-Medium.ttf'); } 
+
 
 
  /* video player on individual pages */
