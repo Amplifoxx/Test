@@ -18,7 +18,14 @@
 
 body {
     font-family: Inter_Regular;
-    background-color: #111;
+    background-color: #19191a;
+}
+
+.banner--fadeBottom {
+  margin-top: -200px;
+  height: 200px;
+  background-image: linear-gradient(180deg, transparent, rgba(1,1,1,.5), #19191a);
+  z-index: 2;
 }
 
 body::-webkit-scrollbar {
@@ -290,7 +297,7 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
     margin-left: 10px;
     direction: rtl;
-    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.6);
+    box-shadow: 10px 10px 10px 20px rgb(255, 255, 255, 1);
 }
 
 /* .videoPreview:hover {
@@ -410,10 +417,22 @@ body::-webkit-scrollbar {
     height: 560px;
 }
 
+/* Roadkill Preview */
+.banner5 {
+  background-image:  url('images/Banners/Roadkill_Preview.png');
+  background-size: cover;
+  background-position: center center;
+  background-position-y: 30%;
+  color: white;
+  object-fit: contain;
+  height: 560px;
+}
+
+
 
 
 @media only screen and (min-width: 3000px) {
-    .banner1, .banner2, .banner3, .banner4 {
+    .banner1, .banner2, .banner3, .banner4, .banner5 {
       height:900px;
     }}
 
@@ -445,16 +464,73 @@ body::-webkit-scrollbar {
     height: 560px;
 }
 
+.banner__contents5 {
+  margin-left: 0px;
+  padding-top: 100px;
+  height: 560px;
+}
+
+
 @media only screen and (min-width: 3000px) {
-    .banner__contents1, .banner__contents2, .banner__contents3, .banner__contents4 {
+    .banner__contents1, .banner__contents2, .banner__contents3, .banner__contents4, .banner__contents5 {
       padding-top:320px;
       padding-left: 0px;
     }}
 
-.banner__title {
+.CKOM__banner__title {
     font-size: 3rem;
     font-weight: 700;
     padding: 4px 50px;
+}
+
+.teaser__title {
+  justify-content:center;
+  text-align: center;
+  margin-right:50px;
+  margin-left: 50px;
+  margin-top: 280px; 
+  font-size:20px; 
+  font-family:Apple_Garamond;
+  color: rgb(255, 248, 211);
+  font-weight: 100;
+  line-height: 1;
+  text-shadow: 0px 0px 0px black;
+  padding: 4px 0px;
+  border: 0px solid red;
+  z-index: 3;
+}
+
+.teaser__title h2 {
+  justify-content:center;
+  text-align: center;
+  margin-right:50px;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size:10px; 
+  font-family:Apple_Garamond_Light;
+  color: rgb(95, 94, 90);
+  line-height: 1;
+  text-shadow: 0px 0px 0px black;
+  padding: 0px 0px;
+  border: 0px solid red;
+  z-index: 3;
+}
+
+.teaser__title h3 {
+  justify-content:center;
+  text-align: center;
+  margin-right:50px;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size:10px; 
+  font-family:SteelTongs;
+  color: rgb(95, 94, 90);
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0px 0px 0px black;
+  padding: 0px 0px;
+  border: 0px solid red;
+  z-index: 3;
 }
 
 .banner__description {
@@ -588,12 +664,7 @@ padding: 0px 50px;
     transition: all 0.2s;
 }
 
-.banner--fadeBottom {
-    margin-top: -200px;
-    height: 200px;
-    background-image: linear-gradient(180deg, transparent, rgba(1,1,1,.5), #111);
-    z-index: 2;
-}
+
 
 .banner--fadeSideLeft {
   margin-top: -1000px;
@@ -704,8 +775,8 @@ padding: 0px 50px;
             padding-right: 2rem;
             border-radius: 3vw;
             transition: 0.2s;
-            color: #fbc81d;
-            background-color: #000000;
+            color: #ffffff;
+            background-color: #ffffff7b;
 
         }
 
@@ -786,12 +857,24 @@ padding: 0px 50px;
 
  @font-face { font-family: Perpetua; font-weight: normal; src: url('perpeta.ttf');}
 
- /* Inter */
-@font-face { font-family: Inter_Bold; src: url('Inter-Bold.ttf'); } 
-@font-face { font-family: Inter_SemiBold; src: url('Inter-SemiBold.ttf'); } 
-@font-face { font-family: Inter_Black; src: url('Inter-Black.ttf'); } 
-@font-face { font-family: Inter_Regular; src: url('Inter-Regular.ttf'); } 
-@font-face { font-family: Inter_Medium; src: url('Inter-Medium.ttf'); } 
+
+ /* Inter*/
+ @font-face { font-family: Inter_Bold; src: url('Inter-Bold.ttf'); } 
+ @font-face { font-family: Inter_SemiBold; src: url('Inter-SemiBold.ttf'); } 
+ @font-face { font-family: Inter_Black; src: url('Inter-Black.ttf'); } 
+ @font-face { font-family: Inter_Regular; src: url('Inter-Regular.ttf'); } 
+ @font-face { font-family: Inter_Medium; src: url('Inter-Medium.ttf'); } 
+
+  /* Apple Garamond */
+@font-face { font-family: Apple_Garamond_Bold; src: url('AppleGaramond-Bold.ttf'); } 
+@font-face { font-family: Apple_Garamond_BoldItalic; src: url('AppleGaramond-BoldItalic.ttf'); } 
+@font-face { font-family: Apple_Garamond_Italic; src: url('AppleGaramond-Italic.ttf'); } 
+@font-face { font-family: Apple_Garamond_Light; src: url('AppleGaramond-Light.ttf'); } 
+@font-face { font-family: Apple_Garamond_LightItalic; src: url('AppleGaramond-LightItalic.ttf'); } 
+@font-face { font-family: Apple_Garamond; src: url('AppleGaramond.ttf'); } 
+
+  /* Steel Tongs */
+  @font-face { font-family: SteelTongs; src: url('SteelTongs.ttf'); } 
 
 
 
@@ -866,6 +949,7 @@ padding: 0px 50px;
     justify-content: center;
     overflow: hidden;
     padding: 6px 0px;
+    
   }
   
   .slider {
@@ -884,7 +968,7 @@ padding: 0px 50px;
     aspect-ratio: 16 / 9.3;
     max-height: 800px;
     padding: var(--img-gap);
-    border-radius: 9px;
+    border-radius: 8px;
     
   }
 
@@ -900,7 +984,7 @@ padding: 0px 50px;
     object-fit: fill;
     min-width: 100%;
     max-height: 100%;
-    padding: ;
+    
   }
 
   .top__movie__slider .videoPreview, .top__movie__slider .videoPreview__box {
@@ -908,8 +992,9 @@ padding: 0px 50px;
     max-width: calc(100% / var(--items-per-screen));
     aspect-ratio: 6 / 9;
     max-height: 100%;
-    padding: var(--img-gap);
-    border-radius: 9.5px;
+    padding:  var(--img-gap);
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255, 1);
   }
 
   .top__movie__slider {
@@ -917,6 +1002,7 @@ padding: 0px 50px;
     --slider-index: 0;
     display: flex;
     flex-grow: 1;
+    padding:0px;
     margin: 0 var(--img-gap);
     transform: translateX(calc(var(--slider-index) * -100%));
     transition: transform 250ms ease-in-out;
@@ -938,7 +1024,8 @@ padding: 0px 50px;
     aspect-ratio: 16 / 9.3;
     max-height: 100%;
     padding: var(--img-gap);
-    border-radius: 9.5px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 0px rgb(255, 255, 255, 1);
   }
 
   .movie__slider .oldvideoPreview:hover, .top__movie__slider .videoPreview:hover {
@@ -1129,7 +1216,7 @@ padding: 0px 50px;
   }
   .scroll__container:hover .handle {
     opacity: 1;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .0);
   }
 
   
