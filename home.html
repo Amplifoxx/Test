@@ -386,6 +386,8 @@ function scrollToBottom() {
             <div class="videoPreview__box"><a href="heavy-metal.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Heavy Metal Hover Video_MUSIC.mp4" poster="images/Movie Posters/Heavy+Metal+website+poster LAURALS.jpg"></video></a></div>
             <div class="videoPreview__box"><a href="Sylus.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Sylus+Hover_MUSIC.mp4" poster="images/Movie Posters/Sylus_alt.png"></video></a></div>
             <div class="videoPreview__box"><a href="Savior.html"><video class="videoPreview"  height="" src="images/Thumnail Previews/Savior500x758_Music_Alt.mp4" poster="images/Movie Posters/Savior_Fixed.jpg"></video></a></div>
+            <div class="videoPreview__box"><a href="https://www.youtube.com/@MikeOvertonFilms"target="_blank" rel="noopener noreferrer"><video class="videoPreview"  height="" src="" poster="images/Movie Posters/Youtube.png"></video></a></div>
+            <div class="videoPreview__box"><a href="https://filmfreeway.com/MikeOverton"target="_blank" rel="noopener noreferrer"><video class="videoPreview"  height="" src="" poster="images/Movie Posters/FilmFreeway.png"></video></a></div>
         </div>
         <button class="handle right-handle">
           <div class="back__arrow">
@@ -659,7 +661,10 @@ function scrollToBottom() {
 </script>
 
 
-<!-- script for nav bar fading in and out on scroll -->
+<!-- script for nav bar fading in and out on scroll. REMOVE "BACKGROUND-COLOR" in .nav for this to work -->
+
+
+<!--
 <script>
     const nav = document.getElementById('nav');
 
@@ -667,10 +672,11 @@ function scrollToBottom() {
         if(window.scrollY >=100) {
             nav.classList.add('nav__black')
         } else {
-            nav.classList.remove('nav__black')
+            nav.classList.remove('nav__black') 
         }
     })
 </script>
+-->
 
 
 </body>
